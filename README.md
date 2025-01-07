@@ -30,7 +30,11 @@
 ## :dart: 简介
 
 一款线下狼人杀软件.  
-为了免去线下打狼时必须带牌和需要主持人的麻烦, 我制作了一款狼人杀网站, 希望给你带来方便 ;P
+为了免去线下打狼时必须带牌和需要主持人的麻烦, 我制作了一款狼人杀网站, 希望给你带来方便 
+
+
+
+备注：已修改配置为本地启动，将werewolf-frontend\shared\constants.ts 中的CLIENT_BASE_URL 修改为你本机的ip:3000即可
 
 ## :sparkles: Features
 
@@ -101,7 +105,7 @@
 
 ```bash
 # Clone this project
-$ git clone https://github.com/xiong35/werewolf
+$ git clone https://github.com/huangzm0128/langrensha.git
 
 # Access backend
 $ cd werewolf/werewolf-backend
@@ -109,6 +113,8 @@ $ cd werewolf/werewolf-backend
 $ npm i
 # Run the project
 $ npm run dev
+
+# 修改werewolf-frontend\shared\constants.ts 中的CLIENT_BASE_URL为你本机的ip:3000
 
 # Access frontend
 $ cd ../werewolf-frontend
@@ -120,7 +126,7 @@ $ npm run dev
 
 ### 使用者
 
-直接访问[网址](http://werewolf.xiong35.cn/)即可!
+直接访问[网址](http://localhost:3000)即可!
 
 ## :memo: License
 
