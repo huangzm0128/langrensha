@@ -20,7 +20,7 @@ const httpServer = createServer(app.callback());
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: '*',
     methods: ["GET", "POST"],
   },
   path: WS_PATH_CLIPED,
@@ -32,7 +32,7 @@ setup(io);
 app
   .use(logger())
   .use(
-    cors({ credentials: true, origin: "http://localhost:3000" })
+    cors({ credentials: true, origin: '*' })
   )
 
   .use(useHandleError())
@@ -44,6 +44,6 @@ app
 
 httpServer.listen(3011);
 
-// console.log("listen on 3011");
+console.log("listen on 3011");
 
 export default io;
